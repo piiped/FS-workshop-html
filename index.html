@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Villa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: 
+                    {
+                        'primary': '#363F48',
+                        'secondary': '#808080',
+                        'tertiary': '#F7F7F7',
+                        'darkgrey': '#A9A9A9',
+                        'hcl' : '#59a3fc'
+                    },
+                    backgroundImage: {
+                        'room': "url('/images/room.jpg')",
+                    },
+                    height:{
+                        'cover' : '80vh'
+                    }
+                    }
+                }
+            }
+    </script>
+</head>
+<body>
+    <section>
+        <nav class="bg-primary p-5">
+            <div>
+                <img src="/images/MyVilla.png" alt="logo">
+            </div>
+        </nav>
+    </section>
+
+    <section class="bg-room bg-cover bg-center w-full h-cover flex flex-start">
+        <div class="container flex justify-start items-center mx-40  h-full">
+            <form class=" bg-white shadow-md rounded p-10 ">
+                <h1 class="text-3xl text-center font-bold text-secondary mb-10">My Villa</h1>
+            <div class="mb-3">
+                <label class="block text-gray-700 text-md mb-2" for="email">Email address</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email">
+                <p class="text-grey-700 font-light text-sm">Please enter your email address.</p>
+            </div>
+            <div class="mb-3">
+                <label class="block text-gray-700 text-md mb-2" for="password">Password</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" >
+            </div>
+            <div class="flex items-center justify-between">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-light py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">Sign In</button>
+            </div>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div class="block flex items-center justify-center py-10">
+            <div class="container flex text-center justify-around items-center">
+                <div class="flex flex-col items-center">
+                    <img src="/images/2.original.png" class="mb-3 flex-center" alt="">
+                    <p class="text-2xl font-bold text-secondary text-center mb-3">Best Homes</p>
+                    <p class="text-center mb-3">
+                    Design becoming like this is<br>
+                    one of your goals here are <br>
+                    some general pointers.
+                    </p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="/images/1.original.png" class="mb-3 flex-center" alt="">
+                    <p class="text-2xl font-bold text-secondary text-center mb-3">Best Homes</p>
+                    <p class="text-center mb-3">
+                    Design becoming like this is<br>
+                    one of your goals here are <br>
+                    some general pointers.
+                    </p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="/images/3.original.png" class="mb-3 flex-center" alt="">
+                    <p class="text-2xl font-bold text-secondary text-center mb-3">Best Homes</p>
+                    <p class="text-center mb-3">
+                    Design becoming like this is<br>
+                    one of your goals here are <br>
+                    some general pointers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="bg-tertiary py-12 ">
+        <div class="block text-center items-center">
+            <div class="items-center flex flex-col">
+                <img src="images/home-icon.original.png" class="items-center mb-4" alt="">
+                <p class="text-3xl font-bold text-secondary text-center mb-4">OUR AWESOME HOMES</p>
+                <p class="text-xl text-darkgrey text-center mb-4">
+                    We turn you on to pro lighting startegles to highlight features
+                    create intrigue.
+                </p>
+            </div>
+
+            <ul id="myListBlog" class="flex flex-wrap flex-row justify-center items-center mx-40  h-full ">
+                <li class="list-item ">
+                    <div class="thumb ">
+                        <a href="/images/kitchen.jpg" class="light-box">
+                            <img class="info_img" src="/images/kitchen.jpg" alt="">
+                        </a>
+                    </div>
+                    <h3 class="head_color">Beautiful kitchen</h3>
+                    <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="">
+                        <a href="#" class="colored_button ">View Home</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="p-10">
+        <div class="block text-center items-center p-10">
+            <div class="items-center flex flex-col">
+                <img src="/images/section-2.png" class="items-center" alt="">
+                <p class="text-3xl font-bold text-secondary text-center mb-4">WELCOME TO OUR COMPANY</p>
+                <p class="text-xl text-darkgrey text-center mb-4">We turn you on to pro lighting startegles to highlight features
+                    create intrigue.</p>
+            </div>
+
+            <div class="flex flex-around items-center p-10">
+                <div class="flex">
+                    <div class="flex flex-col text-left pt-10 basis-3/6">
+
+                        <div class="flex flex-start items-center mb-9">
+                            <img class="mr-9" src="/images/icon-check.original.png" alt="">
+                            <p class="leading-5">
+                                The best Unbounce templates that are considered to be  withinthese catgorie.
+                            </p>
+                        </div>
+                        <div class="flex flex-start items-center mb-9">
+                            <img class="mr-9" src="/images/icon-check.original.png" alt="">
+                            <p class="leading-5">
+                                The best Unbounce templates that are considered to be  withinthese catgorie.
+                            </p>
+                        </div>
+                        <div class="flex flex-start items-center mb-9">
+                            <img class="mr-9" src="/images/icon-check.original.png" alt="">
+                            <p class="leading-5">
+                                The best Unbounce templates that are considered to be  withinthese catgorie.
+                            </p>
+                        </div>
+                        <div class="flex flex-start items-center mb-9">
+                            <img class="mr-9" src="/images/icon-check.original.png" alt="">
+                            <p class="leading-5">
+                                The best Unbounce templates that are considered to be  withinthese catgorie.
+                            </p>
+                        </div>
+                    </div>   
+                        
+                    <div class="basis-3/6">
+                        <img src="/images/welcome.jpg" class="w-full h-full" alt="">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>    
+            <script src="/js/main.js"></script>
+    
+</body>
+</html>
